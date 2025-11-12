@@ -84,6 +84,7 @@
             this.question01Button.TabIndex = 3;
             this.question01Button.Text = "Question 01";
             this.question01Button.UseVisualStyleBackColor = true;
+            this.question01Button.Click += new System.EventHandler(this.question01Button_Click);
             // 
             // question1OutputLabel
             // 
@@ -118,12 +119,13 @@
             this.question2Button.TabIndex = 7;
             this.question2Button.Text = "Question 02";
             this.question2Button.UseVisualStyleBackColor = true;
+            this.question2Button.Click += new System.EventHandler(this.question2Button_Click);
             // 
             // question2TextBox
             // 
             this.question2TextBox.Location = new System.Drawing.Point(5, 385);
             this.question2TextBox.Name = "question2TextBox";
-            this.question2TextBox.Size = new System.Drawing.Size(286, 26);
+            this.question2TextBox.Size = new System.Drawing.Size(286, 36);
             this.question2TextBox.TabIndex = 8;
             // 
             // question2OutputLabel
@@ -159,19 +161,21 @@
             this.question3Button.TabIndex = 12;
             this.question3Button.Text = "Question 03";
             this.question3Button.UseVisualStyleBackColor = true;
+            this.question3Button.Click += new System.EventHandler(this.question3Button_Click);
             // 
             // q3Int1Text
             // 
             this.q3Int1Text.Location = new System.Drawing.Point(479, 281);
             this.q3Int1Text.Name = "q3Int1Text";
-            this.q3Int1Text.Size = new System.Drawing.Size(100, 26);
+            this.q3Int1Text.Size = new System.Drawing.Size(100, 36);
             this.q3Int1Text.TabIndex = 13;
+            this.q3Int1Text.TextChanged += new System.EventHandler(this.q3Int1Text_TextChanged);
             // 
             // q3int2Text
             // 
             this.q3int2Text.Location = new System.Drawing.Point(638, 281);
             this.q3int2Text.Name = "q3int2Text";
-            this.q3int2Text.Size = new System.Drawing.Size(100, 26);
+            this.q3int2Text.Size = new System.Drawing.Size(100, 36);
             this.q3int2Text.TabIndex = 14;
             // 
             // question3OutputLabel
@@ -211,7 +215,7 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.label10);
